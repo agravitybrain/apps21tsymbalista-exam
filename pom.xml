@@ -23,7 +23,7 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-    
+
     <reporting>
         <plugins>
             <plugin>
@@ -33,7 +33,7 @@
             </plugin>
         </plugins>
     </reporting>
-   
+
     <build>
         <plugins>
             <plugin>
@@ -55,7 +55,7 @@
                     </execution>
                 </executions>
             </plugin>
-            
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-checkstyle-plugin</artifactId>
@@ -70,7 +70,7 @@
                     </execution>
                 </executions>
             </plugin>
-            
+
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>findbugs-maven-plugin</artifactId>
@@ -89,7 +89,7 @@
                     </execution>
                 </executions>
             </plugin>
-            
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-pmd-plugin</artifactId>
@@ -98,7 +98,7 @@
                     <linkXref>true</linkXref>
                     <sourceEncoding>UTF8</sourceEncoding>
                     <minimumTokens>30</minimumTokens>
-                    <targetJdk>1.8</targetJdk>                    
+                    <targetJdk>1.8</targetJdk>
                 </configuration>
                 <executions>
                     <execution>
@@ -107,11 +107,11 @@
                             <goal>pmd</goal>
                             <goal>cpd</goal>
                         </goals>
-                        
+
                     </execution>
                 </executions>
-            </plugin>	
-            
+            </plugin>
+
         </plugins>
     </build>
 
@@ -119,9 +119,9 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        
+
         <checkstyle.skip>false</checkstyle.skip>
-        <findbugs.skip>false</findbugs.skip> 
+        <findbugs.skip>false</findbugs.skip>
         <checkstyle.config.location>checkstyle.xml</checkstyle.config.location>
     </properties>
 
