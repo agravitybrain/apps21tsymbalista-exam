@@ -20,10 +20,12 @@ public class JsonObject extends Json {
     @Override
     public String toJson() {
         StringBuilder jsonBuilder = new StringBuilder();
-        Iterator<Map.Entry<String, Json>> iterator = jsonObject.entrySet().iterator();
-        while(iterator.hasNext()) {
+        Iterator<Map.Entry<String, Json>> iterator = jsonObject
+                .entrySet().iterator();
+        while (iterator.hasNext()) {
             Map.Entry<String, Json> pair = iterator.next();
-            jsonBuilder.append(pair.getKey()).append(": ").append(pair.getValue().toJson());
+            jsonBuilder.append(pair.getKey()).append(": ")
+                    .append(pair.getValue().toJson());
             if (iterator.hasNext()) {
                 jsonBuilder.append(", ");
             }
